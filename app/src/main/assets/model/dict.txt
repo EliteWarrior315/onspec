@@ -1,0 +1,10 @@
+car
+sunflowers
+cat
+roses
+motorbike
+fruit
+dog
+daisy
+dandelion
+tulips
