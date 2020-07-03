@@ -44,10 +44,13 @@ public class plantScan extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent();
+               /* Intent i=new Intent();
                 i.setType("images/*");
                 i.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(i,"choose image"),121);
+                startActivityForResult(Intent.createChooser(i,"choose image"),121); */
+                
+                Intent intent = new Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                startActivityForResult(intent, 121);
 
 
 
