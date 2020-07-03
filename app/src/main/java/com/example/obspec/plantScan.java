@@ -79,7 +79,7 @@ public class plantScan extends AppCompatActivity {
                                 String text = label.getText();
                                 float confidence = label.getConfidence();
                                 int index = label.getIndex();
-                                resultText.append(text);
+                                resultText.setText(text);
                             }
                         }
                     })
